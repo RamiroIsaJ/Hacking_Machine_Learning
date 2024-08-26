@@ -28,5 +28,5 @@ Moreover, an anomaly detection technique was used to predict the type of attacks
 * One Class SVM
 * Isolation Forest
 
-The results will be presented in the paper: ** Classification of Cognitive Patterns of Hackers Using Machine Learning** in Lecture Notes of Computer Science in September 2024.
+The results will be presented in the paper: **Classification of Cognitive Patterns of Hackers Using Machine Learning** in <mark>Lecture Notes of Computer Science</mark> in September 2024.
 
