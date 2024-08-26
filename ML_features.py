@@ -8,7 +8,8 @@ from sklearn.ensemble import IsolationForest
 from sklearn import svm
 from sklearn.metrics import confusion_matrix
 from unsupervised_random_forest import urf
-'''
+
+
 hack = pd.read_csv('features_pattern.csv')
 nHack = pd.read_csv('features_pattern_.csv')
 # classes = pd.read_csv('features_classes.csv')
@@ -35,18 +36,10 @@ plt.plot(hackNDf['PCA1'], hackNDf['PCA2'], 'or')
 plt.legend(targets)
 plt.grid()
 plt.show()
-'''
+
 file = pd.read_csv('features_patternT.csv')
 print(file)
-'''
-hack = file.loc[file['Descript'] >= 0]
-nhack = file.loc[file['Descript'] < 0]
-fig = plt.figure()
-ax = plt.axes(projection='3d')
-ax.scatter(hack['Web'], hack['IP'], hack['Descript'], 'or')
-ax.scatter(nhack['Web'], nhack['IP'], nhack['Descript'], 'og')
-plt.show()
-'''
+
 classes = pd.read_csv('features_classes.csv')
 data = StandardScaler().fit_transform(file)
 print('----> Finish standard scaler process -------------')
@@ -97,7 +90,7 @@ ax = sb.heatmap(matrix/np.sum(matrix), annot=True, fmt='.2%', cmap='YlGnBu', xti
 ax.set_xlabel('Predicted values')
 ax.set_ylabel('Test values')
 plt.show()
-'''
+
 print('Isolation Forest')
 X_train = dataset1
 clf = IsolationForest(contamination=0.075, random_state=0)
@@ -121,7 +114,6 @@ ax = sb.heatmap(matrix/np.sum(matrix), annot=True, fmt='.2%', cmap='YlGnBu', xti
 ax.set_xlabel('Predicted values')
 ax.set_ylabel('Test values')
 plt.show()
-
 
 print('Unsupervised Random Forest')
 X_train = dataset1
@@ -168,4 +160,3 @@ for target, color in zip(targets, colors):
 plt.legend(targets)
 plt.grid()
 plt.show()
-'''
