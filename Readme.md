@@ -18,11 +18,15 @@ The process is summarized as a Multiple Linear Regression with an output of prob
 | SQL INJECTION |        
 | THE MAN IN THE MIDDLE| 
 
-## Authomatic Control System
-* To inject the substance, this software includes an authomatic algorithm to process a image which is save in a interval of time during the experiment.
-* **Perccentage of Area** is the parameter that algorithm computes by image to take a decision to inject high or low flow of fluid.
+## Machine Learning Algorithms
+For this research, we have done a comparison of performance with 3 algorithms:
+* Artificial Neural Networks
+* Decision Trees
+* Random Forest
 
-This is a test version 0.2.1
+Moreover, an anomaly detection technique was used to predict the type of attacks:
+* One Class SVM
+* Isolation Forest
 
-![image info](./src/ima1.png)
+The results will be presented in the paper: ** Classification of Cognitive Patterns of Hackers Using Machine Learning** in Lecture Notes of Computer Science in September 2024.
 
